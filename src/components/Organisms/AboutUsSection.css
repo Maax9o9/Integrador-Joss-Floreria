@@ -1,0 +1,29 @@
+section {
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  color: #333;
+  margin-top: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.image-with-title {
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.5em;
+  text-align: justify;
+  margin: 20px 0;
+}

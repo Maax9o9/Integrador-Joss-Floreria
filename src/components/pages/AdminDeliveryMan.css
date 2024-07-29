@@ -1,0 +1,56 @@
+.admin-deliveryman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 200px; 
+  text-align: center;
+}
+
+.admin-deliveryman > button {
+  margin-top: 20px;
+}
+
+.empty-deliveryman {
+  font-size: 1.5em;  
+  color: #555;       
+  margin-bottom: 20px; 
+  text-align: center; 
+}
+
+.deliveryman-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 80%;
+  text-align: left;
+}
+
+.deliveryman-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 20px;
+}
+
+.deliveryman-details label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.deliveryman-details input,
+.deliveryman-details button {
+  width: 100%;
+  padding: 8px;
+  margin: 4px 0;
+  box-sizing: border-box;
+}
+
+.deliveryman-actions {
+  display: flex;
+  gap: 10px;
+}

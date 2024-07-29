@@ -1,0 +1,73 @@
+.admin-order-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 200px;
+}
+
+.admin-order-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.admin-order-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.product-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.admin-order-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-order-details p { 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.admin-status-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.admin-status-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-status-button.en-proceso {
+  background-color: #91BEDF;
+}
+
+.admin-status-button.listo {
+  background-color: #91BEDF;
+}
+
+.admin-status-button.en-camino {
+  background-color: #91BEDF;
+}
+
+.admin-status-button.terminado {
+  background-color: #ff4500;
+}
+
+.admin-status-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

@@ -1,0 +1,20 @@
+.delivery-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .delivery-header {
+    background-color: #E1C6FF; 
+    color: #000;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .delivery-main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  

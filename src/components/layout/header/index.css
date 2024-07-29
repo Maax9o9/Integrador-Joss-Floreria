@@ -1,0 +1,128 @@
+/* index.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E1C6FF;
+  padding: 15px 0;
+  position: fixed; 
+  width: 100%; 
+  top: 0;
+  z-index: 1000; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  box-sizing: border-box;
+}
+
+.header-logo {
+  font-family: "Great Vibes", cursive;
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 10px; 
+}
+
+.nav-bar {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+}
+
+.nav-item {
+  margin: 0 20px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  position: relative; 
+}
+
+.nav-item a:hover {
+  color: #bb82c9;
+}
+
+.nav-item[data-animation="hover"] a::before {
+  content: '';
+  position: absolute;
+  bottom: -3px; 
+  left: 0;
+  width: 100%;
+  height: 2px; 
+  background-color: #af88c9; 
+  transform-origin: right; 
+  transform: scaleX(0); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.nav-item[data-animation="hover"] a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1); 
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  position: absolute; 
+  right: 20px; 
+  top: 10px;
+}
+
+.header-icon-button {
+  background: none;
+  border: none;
+  padding: 0; 
+  cursor: pointer;
+}
+
+.header-icon {
+  margin-left: 15px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  filter: brightness(0) invert(0); 
+  transition: filter 0.3s ease; 
+}
+
+.header-icon:hover {
+  filter: brightness(0) invert(0.5) sepia(1) saturate(100%) hue-rotate(270deg); /* Morado */
+}
+
+.header-icon-button:active .header-icon {
+  filter: brightness(0) invert(0.5) sepia(1) saturate(100%) hue-rotate(270deg); /* Morado al hacer clic */
+}
+
+.header-icon-button:focus .header-icon {
+  filter: brightness(0) invert(0.5) sepia(1) saturate(100%) hue-rotate(270deg); /* Morado al enfocar */
+  outline: none; 
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .header-icons {
+    position: static;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,137 @@
+.make-your-bouquet {
+  padding: 20px;
+  margin-top: 200px;
+}
+
+.selection-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;  
+  margin-bottom: 20px;
+}
+
+.selection-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+  cursor: pointer;
+  padding: 40px; 
+  width: 150px;  
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  background-color: #fff; 
+  position: relative; 
+}
+
+.selection-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px; 
+}
+
+.selection-card.selected {
+  transform: scale(1.05);
+  opacity: 1;
+  border-color: #6e008a; 
+}
+
+.selection-card.not-selected {
+  opacity: 0.5;
+}
+
+.flower-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.flower-option {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;  
+  width: 350px; 
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+  background-color: #fff; 
+  position: relative; 
+}
+
+.flower-option img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px; 
+}
+
+.flower-option.selected {
+  transform: scale(1.05);
+  opacity: 1;
+  border-color: #6e008a; 
+}
+
+.flower-option.not-selected {
+  opacity: 0.5;
+}
+
+.flower-details {
+  padding: 10px 0;
+  color: #333; 
+  font-family: 'Montserrat', sans-serif;
+}
+
+.flower-details h4 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #444; 
+}
+
+.flower-details p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+  color: #666;
+}
+
+.add-to-cart-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;  
+  font-size: 1rem;  
+  color: #fff;
+  background-color: #6e008a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e00ad2;
+}
+
+.no-flowers-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #999;
+  font-size: 1.2rem;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  max-width: 500px; 
+  height: 200px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-height: 100px; 
+}

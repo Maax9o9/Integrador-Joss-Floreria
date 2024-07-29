@@ -1,0 +1,35 @@
+
+.card-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid #ac80b6;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(22, 0, 23, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(3, 0, 4, 0.2);
+  }
+  
+  .card-image {
+    width: 100px;
+    height: 100px;
+    object-fit:cover;
+    border-radius:12px; 
+    align-items: center;
+    padding-left: 10px;
+  }
+  
+  .card-text {
+    padding: 5px;
+    font-size: 16px;
+    color: #333;
+    flex: 1; 
+  }
+  
+  

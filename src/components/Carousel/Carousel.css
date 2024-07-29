@@ -1,0 +1,89 @@
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.carousel-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.blur-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.carousel-image {
+  width: 80%;
+  height: auto;
+  display: block;
+}
+
+.blurred-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(20px);
+  z-index: -1;
+  transform: scale(1.2); /* Slightly enlarge the blurred image */
+}
+
+.blurred-image:first-child {
+  left: 0;
+  background-position: left center;
+}
+
+.blurred-image:last-child {
+  right: 0;
+  background-position: right center;
+}
+
+.carousel-slide-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  max-width: 70%;
+}
+
+.slick-prev, .slick-next {
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #bbb;
+  bottom: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff;
+}

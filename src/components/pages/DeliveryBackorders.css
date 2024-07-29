@@ -1,0 +1,44 @@
+.delivery-backorders-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    margin-top: 250px;
+  }
+  
+  .notification-card {
+    display: flex;
+    align-items: center;
+    background-color: #e0f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .notification-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .icon-container {
+    margin-right: 20px;
+  }
+  
+  .urgent-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .notification-details {
+    text-align: center;
+    flex: 2;
+  }
+  
+  .notification-details p {
+    margin: 5px 0;
+    color: #333;
+  }
+  

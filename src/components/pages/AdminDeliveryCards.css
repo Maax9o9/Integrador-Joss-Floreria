@@ -1,0 +1,49 @@
+.admin-dm-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+  }
+  
+  .deliveryman-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .deliveryman-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(87, 12, 172, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: justify;
+    padding-bottom: 60px; 
+  }
+ 
+  
+  .deliveryman-card h3 {
+    margin: 10px 0;
+  }
+  
+  .deliveryman-card p {
+    margin: 5px 0;
+  }
+  
+  .delete-button {
+    color: white;
+    border: none;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: #e5a1f3;
+  }
+  

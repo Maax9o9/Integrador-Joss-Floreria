@@ -1,0 +1,21 @@
+.admin-inventory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 200px; 
+  text-align: center;
+
+}
+
+.admin-inventory > button {
+  margin-top: 20px;
+}
+
+
+.empty-inventory {
+  font-size: 1.5em;  
+  color: #555;       
+  margin-bottom: 20px; 
+  text-align: center;
+}
